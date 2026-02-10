@@ -7342,3 +7342,5 @@ LightingData.asset     binary
 /airhokey/My[[:space:]]project/Library/PackageCache/com.unity.toolchain.linux-x86_64-linux@7a9a40df47d5/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
 /pong/Pong/Library/PackageCache/com.unity.burst@973857688024/.Runtime/libburst-llvm-19.dylib filter=lfs diff=lfs merge=lfs -text
 /pong/Pong/Library/PackageCache/com.unity.toolchain.linux-x86_64-linux@7a9a40df47d5/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
+/airHokey/AirHokey/Library/PackageCache/com.unity.burst@973857688024/.Runtime/libburst-llvm-19.dylib filter=lfs diff=lfs merge=lfs -text
+/airHokey/AirHokey/Library/PackageCache/com.unity.toolchain.linux-x86_64-linux@7a9a40df47d5/data~/payload.tar.7z filter=lfs diff=lfs merge=lfs -text
