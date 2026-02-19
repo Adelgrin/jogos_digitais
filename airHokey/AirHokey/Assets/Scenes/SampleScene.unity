@@ -161,7 +161,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 228ea4cf6498a1170a3ef0ca9239f48c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -495,7 +495,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 228ea4cf6498a1170a3ef0ca9239f48c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -542,6 +542,8 @@ GameObject:
   - component: {fileID: 1245615616}
   - component: {fileID: 1245615615}
   - component: {fileID: 1245615617}
+  - component: {fileID: 1245615619}
+  - component: {fileID: 1245615618}
   m_Layer: 0
   m_Name: mallet_blue_0
   m_TagString: AI
@@ -659,6 +661,47 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.935
+--- !u!114 &1245615618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245615614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16628a17eb76ad709bc85e459dc0a2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  puck_0: {fileID: 1839624726}
+  speed: 5
+--- !u!50 &1245615619
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245615614}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1402968374
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +913,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 228ea4cf6498a1170a3ef0ca9239f48c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -920,6 +963,7 @@ GameObject:
   - component: {fileID: 1839624724}
   - component: {fileID: 1839624727}
   - component: {fileID: 1839624728}
+  - component: {fileID: 1839624729}
   m_Layer: 0
   m_Name: puck_0
   m_TagString: Puck
@@ -1161,7 +1205,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 0.01
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1170,10 +1214,23 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1839624729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839624722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63421590c9a7372e8a82d4cc0a84cbe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  hitForce: 10
 --- !u!1 &2042579023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1273,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 228ea4cf6498a1170a3ef0ca9239f48c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
