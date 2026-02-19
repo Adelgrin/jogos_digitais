@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class Audioplay : MonoBehaviour
+public class CollisionSoundPlayer : MonoBehaviour
 {
-public AudioSource source;
+	private AudioSource audioSource;
+	public AudioClip collisionSoundClip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-	    source = GetComponent<AudioSource>();
+	    audioSource = GetComponent<AudioSource>();
     }
     void OnCollisionEnter2D (Collision2D coll){
-	    source.Play();
-    }
-
-    void Update()
-    {
-        
+	    if (collisionSoundClip != null && audioSource != null){
+		    audioSource.PlayOneShot(collisionSoundClip);
+	    }else if (audioSource != null && audioSource.clip != null){
+		    audioSource.Play();
+	    }
     }
 }
