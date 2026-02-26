@@ -52,8 +52,8 @@
 *.physicMaterial        unity-yaml
 *.physicsMaterial2D     unity-yaml
 # Exclude from GitHub stats and diffs: third-party plugins, packages lock file
-Assets/Plugins/**           linguist-generated
-Packages/packages-lock.json linguist-generated
+*Assets/Plugins/**           linguist-generated
+*Packages/packages-lock.json linguist-generated
 # Unity LFS
 *.cubemap               lfs
 *.unitypackage          lfs
@@ -140,7 +140,7 @@ Packages/packages-lock.json linguist-generated
 # Spine export file for Unity
 *.skel.bytes            lfs
 # Exceptions for .asset files such as lightning pre-baking
-LightingData.asset     binary
+*LightingData.asset     binary
 *.dylib filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
