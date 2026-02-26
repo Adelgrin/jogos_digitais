@@ -254,7 +254,7 @@ MonoBehaviour:
   moveLeft: 104
   moveRight: 108
   speed: 10
-  boundX: 2.25
+  boundX: 8.07
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
