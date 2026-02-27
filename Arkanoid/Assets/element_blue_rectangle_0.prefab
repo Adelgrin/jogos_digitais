@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3464581836736644162}
   - component: {fileID: 2552966627800000224}
   - component: {fileID: 4081760648832337837}
+  - component: {fileID: 4181824778993161033}
   m_Layer: 0
   m_Name: element_blue_rectangle_0
   m_TagString: Untagged
@@ -138,3 +139,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.64, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &4181824778993161033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208584920118290132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b851b3ec4737c3d5980f9d135238538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Block

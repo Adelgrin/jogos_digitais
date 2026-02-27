@@ -15,7 +15,10 @@ public class Ball : MonoBehaviour
 
     void Launch()
     {
-        Vector2 direction = Vector2.up;
+        Vector2 direction = new Vector2(
+            Random.Range(-0.5f, 0.5f),
+            1f
+            ).normalized;
         rb.linearVelocity = direction * initialSpeed;
     }
 }
