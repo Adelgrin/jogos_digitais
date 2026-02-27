@@ -16,6 +16,6 @@ public class Ball : MonoBehaviour
     void Launch()
     {
         Vector2 direction = Vector2.up;
-        rb.velocity = direction * initialSpeed;
+        rb.linearVelocity = direction * initialSpeed;
     }
 }
