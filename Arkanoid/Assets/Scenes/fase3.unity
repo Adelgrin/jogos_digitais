@@ -318,7 +318,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 4becd27575f5e447a893066e30285d24, type: 2}
+  m_Material: {fileID: 6200000, guid: e298d04f6f96e462a95dff99c5de227b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7100ee9c6114c3d5bb56d6defb7b204d, type: 2}
+  - {fileID: 2100000, guid: c92ef993ae927e1b595907e42ff950ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,7 +393,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5564517237339138388, guid: d7c98eaada546a0e5ae58431ccadf545, type: 3}
+  m_Sprite: {fileID: 5564517237339138388, guid: 822646068fa7d3e42a68b55b02ce00ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -448,7 +448,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 4becd27575f5e447a893066e30285d24, type: 2}
+  m_Material: {fileID: 6200000, guid: e298d04f6f96e462a95dff99c5de227b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -782,11 +782,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7565340b9cb3a58b4d87fbe360f879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
-  blockPrefab: {fileID: 208584920118290132, guid: afb3662ed035df1ddbf2ffb1b00aa457, type: 3}
+  blockPrefab: {fileID: 208584920118290132, guid: 649b1af5175e368f4ac96dc122381df4, type: 3}
   rows: 5
   cols: 20
   blockSpacing: 1
-  spawnChance: 0.5
+  spawnChance: 0.7
   offsetX: 10
   offsetY: 4.5
 --- !u!4 &636376096
@@ -1200,7 +1200,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7100ee9c6114c3d5bb56d6defb7b204d, type: 2}
+  - {fileID: 2100000, guid: c92ef993ae927e1b595907e42ff950ad, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1223,7 +1223,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2848224826377265948, guid: c681ab8d22e073c248ee79f00391f91c, type: 3}
+  m_Sprite: {fileID: -2848224826377265948, guid: 465f52f0974f357118ace390b0ab1391, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1243,7 +1243,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.08, y: -3, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1394,6 +1394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameOverText: {fileID: 551941442}
   restartDelay: 3
+  skipper: 110
 --- !u!4 &1676660650
 Transform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,14 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverText;
     public float restartDelay = 3f;
-    // public KeyCode start = KeyCode.Space;
+    public KeyCode skipper = KeyCode.N;
+
+    int totalBlocks;
+
+    void Start()
+    {
+        totalBlocks = FindObjectsOfType<Block>().Length;
+    }
 
     public void GameOver()
     {
@@ -16,5 +23,30 @@ public class GameManager : MonoBehaviour
     void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void BlockDestroyed()
+    {
+        totalBlocks--;
+
+        if (totalBlocks <= 0)
+        {
+            Invoke(nameof(LoadNextLevel), 2f);
+        }
+    }
+
+    void LoadNextLevel()
+    {
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndex + 1);
+    }
+    void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKey(skipper))
+        {
+            LoadNextLevel();
+        }
+#endif
     }
 }
