@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverText;
     public float restartDelay = 3f;
+    // public KeyCode start = KeyCode.Space;
 
     public void GameOver()
     {

@@ -3,6 +3,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float initialSpeed = 8f;
+    public KeyCode starter = KeyCode.Space;
 
     Rigidbody2D rb;
 
@@ -10,7 +11,14 @@ public class Ball : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        Launch();
+    }
+    void Update()
+    {
+
+        if (Input.GetKey(starter) && rb.linearVelocity.magnitude == 0)
+        {
+            Launch();
+        }
     }
 
     void Launch()

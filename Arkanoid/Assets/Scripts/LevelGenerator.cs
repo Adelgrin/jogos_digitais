@@ -4,15 +4,15 @@ public class LevelGenerator : MonoBehaviour
 {
     public GameObject blockPrefab;
 
-    public int rows = 6;
-    public int cols = 10;
+    public int rows = 5;
+    public int cols = 20;
 
-    public float blockSpacing = 1.1f;
+    public float blockSpacing = 1;
 
     public float spawnChance = 0.7f; // 70% de chance de gerar bloco
 
-    public float offsetX = 8;
-    public float offsetY = 5;
+    public float offsetX = 10;
+    public float offsetY = 4.5f;
 
     void Start()
     {
