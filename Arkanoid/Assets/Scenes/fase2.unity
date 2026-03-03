@@ -1032,8 +1032,8 @@ GameObject:
   - component: {fileID: 1655370528}
   - component: {fileID: 1655370527}
   m_Layer: 0
-  m_Name: ballGrey_0 (1)
-  m_TagString: Untagged
+  m_Name: ballGrey_0
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1113,8 +1113,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.11
+  m_Offset: {x: 0.0018108557, y: 0}
+  m_Radius: 0.12913583
 --- !u!212 &1655370530
 SpriteRenderer:
   serializedVersion: 2
@@ -1183,8 +1183,8 @@ Transform:
   m_GameObject: {fileID: 1655370526}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06686133, y: -2.53855, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0735, y: -2.5433, z: 0}
+  m_LocalScale: {x: 0.94, y: 0.9567, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1250,7 +1250,7 @@ GameObject:
   - component: {fileID: 2110914693}
   - component: {fileID: 2110914692}
   m_Layer: 0
-  m_Name: paddleRed_0 (1)
+  m_Name: paddleRed_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
