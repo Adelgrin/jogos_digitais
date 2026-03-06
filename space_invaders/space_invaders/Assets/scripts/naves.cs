@@ -9,9 +9,9 @@ public class naves : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        var vel = rb2d.velocity;
+        var vel = rb2d.linearVelocity;
         vel.x = speed;
-        rb2d.velocity = vel;
+        rb2d.linearVelocity = vel;
     }
 
     void Update()
@@ -25,8 +25,8 @@ public class naves : MonoBehaviour
     }
     void ChangeState()
     {
-        var vel = rb2d.velocity;
+        var vel = rb2d.linearVelocity;
         vel.x *= -1;
-        rb2d.velocity = vel;
+        rb2d.linearVelocity = vel;
     }
 }

@@ -1,0 +1,38 @@
+using UnityEngine;
+
+public class Bullet : MonoBehaviour
+{
+    public playerControl player;
+    public float speed = 10f;
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
+    }
+
+    void onCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Alien"))
+        {
+            Destroy(collision.gameObject);
+        }
+        Destroy(gameObject);
+    }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
+    void DestroyBullet()
+    {
+        if (player != null)
+            player.BulletDestroyed();
+        Destroy(gameObject);
+    }
+}
