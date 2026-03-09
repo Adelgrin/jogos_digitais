@@ -4,14 +4,26 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverText;
-
     bool gameOver = false;
 
     void Update()
     {
         if (gameOver && Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            RestartGame();
+        }
+
+        CheckAliens();
+    }
+
+    void CheckAliens()
+    {
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
+        // Debug.Log(aliens);
+
+        if (aliens.Length == 0)
+        {
+            RestartGame();
         }
     }
 
@@ -19,5 +31,10 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         gameOverText.SetActive(true);
+    }
+
+    void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
