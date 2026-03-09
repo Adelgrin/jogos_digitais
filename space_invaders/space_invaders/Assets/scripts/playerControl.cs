@@ -83,7 +83,7 @@ public class playerControl : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
-
+        Debug.Log("Player morreu - trigger Damage");
         rb2d.linearVelocity = Vector2.zero;
         anim.SetTrigger("Damage");
 
@@ -92,7 +92,8 @@ public class playerControl : MonoBehaviour
 
     void GameOver()
     {
+        FindObjectOfType<GameManager>().GameOver();
         Destroy(gameObject);
-        Debug.Log("Game Over");
+        // Debug.Log("Game Over");
     }
 }
