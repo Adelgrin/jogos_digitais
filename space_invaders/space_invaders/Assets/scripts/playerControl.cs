@@ -16,9 +16,13 @@ public class playerControl : MonoBehaviour
 
     private GameObject currentBullet;
 
+    Animator anim;
+    bool isDead = false;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -72,5 +76,23 @@ public class playerControl : MonoBehaviour
     public void BulletDestroyed()
     {
         currentBullet = null;
+    }
+
+    public void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        rb2d.linearVelocity = Vector2.zero;
+        anim.SetTrigger("Damage");
+
+        Invoke("GameOver", 1f);
+    }
+
+    void GameOver()
+    {
+        Destroy(gameObject);
+        Debug.Log("Game Over");
     }
 }

@@ -523,37 +523,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.02, y: 0.8}
   m_EdgeRadius: 0
---- !u!1 &65025809
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 65025810}
-  m_Layer: 0
-  m_Name: firePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &65025810
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65025809}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.89, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1373452158}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &72163208
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,7 +4865,7 @@ GameObject:
   - component: {fileID: 1182280558}
   m_Layer: 0
   m_Name: SpaceInvaders_player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5032,7 +5001,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5742,7 +5711,6 @@ GameObject:
   - component: {fileID: 1373452161}
   - component: {fileID: 1373452160}
   - component: {fileID: 1373452159}
-  - component: {fileID: 1373452162}
   m_Layer: 0
   m_Name: SpaceInvaders_8p1 (1)
   m_TagString: Alien
@@ -5843,8 +5811,7 @@ Transform:
   m_LocalPosition: {x: -1.2700005, y: -0.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 65025810}
+  m_Children: []
   m_Father: {fileID: 2086989492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1373452159
@@ -5932,22 +5899,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.02, y: 0.8}
   m_EdgeRadius: 0
---- !u!114 &1373452162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373452155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e34a99963f9186f09b506a8d70dbf0e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AlienShoot
-  bulletPrefab: {fileID: 8482718799077030851, guid: 362443bb929eaafccb767c7e4b7851b0, type: 3}
-  firePoint: {fileID: 65025810}
-  minShootTime: 2
-  maxShootTime: 5
 --- !u!1 &1405942077
 GameObject:
   m_ObjectHideFlags: 0
