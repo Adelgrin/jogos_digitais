@@ -15,18 +15,18 @@ public class Bullet : MonoBehaviour
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 
-    void onCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Alien"))
         {
             Destroy(collision.gameObject);
         }
-        Destroy(gameObject);
+        DestroyBullet();
     }
 
     void OnBecameInvisible()
     {
-        Destroy(gameObject);
+        DestroyBullet();
     }
 
     void DestroyBullet()
