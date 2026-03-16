@@ -79,6 +79,8 @@ public class Enemy : MonoBehaviour
         // colisão com player
         if (other.CompareTag("Player"))
         {
+            GameManager.instance.GameOver();
+
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
